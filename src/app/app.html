@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container header__container">
-    <img src="/assets/images/Logo.svg" alt="Logo" />
+    <img src="assets/images/Logo.svg" alt="Logo" />
     <nav class="header__nav">
       <button class="header__btn" type="button">Desitnations</button>
       <button class="header__btn" type="button">Hotels</button>
@@ -15,8 +15,8 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero__container">
+<section class="hero container">
+  <div class="hero__container">
     <div class="hero__content">
       <p class="hero__subtitle">Best Destinations around the world</p>
       <h1 class="hero__title">Travel, enjoy and live a new and full life</h1>
@@ -41,59 +41,52 @@
   <img src="assets/images/Travel.svg" alt="Travel" />
 </section>
 
-<section class="services">
-  <div class="container">
-    <div class="section-header">
-      <p class="section-header__subtitle">CATEGORY</p>
-      <h2 class="section-header__title">We Offer Best Services</h2>
-    </div>
+<section class="services container">
+  <div class="section-header">
+    <p class="section-header__subtitle">CATEGORY</p>
+    <h2 class="section-header__title">We Offer Best Services</h2>
+  </div>
 
-    <div class="services__container">
-      <div class="service-card">
-        <img src="/src/assets/images/weather.svg" alt="Calculated Weather" />
-        <p class="service-card__title">Calculated Weather</p>
-        <p class="service-card__text">
-          Built Wicket longer admire do barton vanity itself do in it.
-        </p>
-      </div>
-      <div class="service-card">
-        <img src="/src/assets/images/flights.svg" alt="Best Flights" />
-        <p class="service-card__title">Best Flights</p>
-        <p class="service-card__text">
-          Engrossed listening. Park gate sell they west hard for the.
-        </p>
-      </div>
-      <div class="service-card">
-        <img src="/src/assets/images/events.svg" alt="Local Events" />
-        <p class="service-card__title">Local Events</p>
-        <p class="service-card__text">
-          Barton vanity itself do in it. Preferred to men it engrossed listening.
-        </p>
-      </div>
-      <div class="service-card">
-        <img src="/src/assets/images/customization.svg" alt="Customization" />
-        <p class="service-card__title">Customization</p>
-        <p class="service-card__text">
-          We deliver outsourced aviation services for military customers
-        </p>
-      </div>
+  <div class="services__container">
+    <div class="service-card">
+      <img src="assets/images/weather.svg" alt="Calculated Weather" />
+      <p class="service-card__title">Calculated Weather</p>
+      <p class="service-card__text">Built Wicket longer admire do barton vanity itself do in it.</p>
+    </div>
+    <div class="service-card">
+      <img src="assets/images/flights.svg" alt="Best Flights" />
+      <p class="service-card__title">Best Flights</p>
+      <p class="service-card__text">Engrossed listening. Park gate sell they west hard for the.</p>
+    </div>
+    <div class="service-card">
+      <img src="assets/images/events.svg" alt="Local Events" />
+      <p class="service-card__title">Local Events</p>
+      <p class="service-card__text">
+        Barton vanity itself do in it. Preferred to men it engrossed listening.
+      </p>
+    </div>
+    <div class="service-card">
+      <img src="assets/images/customization.svg" alt="Customization" />
+      <p class="service-card__title">Customization</p>
+      <p class="service-card__text">
+        We deliver outsourced aviation services for military customers
+      </p>
     </div>
   </div>
 </section>
 
-<section class="destinations">
-  <div class="container">
-    <div class="section-header">
-      <img src="assets/images/Travel.svg" alt="Travel" />
-      <p class="section-header__subtitle">Top Selling</p>
-      <h2 class="section-header__title">Top Destinations</h2>
-    </div>
+<section class="destinations container">
+  <div class="section-header">
+    <p class="section-header__subtitle">Top Selling</p>
+    <h2 class="section-header__title">Top Destinations</h2>
+  </div>
 
-    <div class="destinations__flex">
-      <div class="destination-card">
+  <div class="destinations__flex">
+    <div class="destination-card background-rome">
+      <div class="destination-card__desc">
         <p class="destination-card__text">Rome, Italy</p>
         <p class="destination-card__text">$5.42k</p>
-        <div class="destination-card__container">
+        <div class="destination-card__trip">
           <svg
             width="20"
             height="20"
@@ -106,13 +99,15 @@
               fill="#080809"
             />
           </svg>
-          <p class="destination-card__text">10 Days Trip</p>
+          <span class="destination-card__text">10 Days Trip</span>
         </div>
       </div>
-      <div class="destination-card">
+    </div>
+    <div class="destination-card background-london">
+      <div class="destination-card__desc">
         <p class="destination-card__text">London, UK</p>
         <p class="destination-card__text">$4.2k</p>
-        <div class="destination-card__container">
+        <div class="destination-card__trip">
           <svg
             width="20"
             height="20"
@@ -125,13 +120,15 @@
               fill="#080809"
             />
           </svg>
-          <p class="destination-card__text">12 Days Trip</p>
+          <span class="destination-card__text">12 Days Trip</span>
         </div>
       </div>
-      <div class="destination-card">
+    </div>
+    <div class="destination-card background-europe">
+      <div class="destination-card__desc">
         <p class="destination-card__text">Full Europe</p>
         <p class="destination-card__text">$15k</p>
-        <div class="destination-card__container">
+        <div class="destination-card__trip">
           <svg
             width="20"
             height="20"
@@ -144,43 +141,147 @@
               fill="#080809"
             />
           </svg>
-          <p class="destination-card__text">28 Days Trip</p>
+          <span class="destination-card__text">28 Days Trip</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="booking">
-  <div class="container booking__container">
-    <div class="booking__content">
-      <p class="section-header__subtitle">Easy and Fast</p>
-      <h2 class="section-header__title">Book your next trip in 3 easy steps</h2>
+<section class="booking container">
+  <div class="booking__content">
+    <p class="section-header__subtitle">Easy and Fast</p>
+    <h2 class="section-header__title">Book your next trip in 3 easy steps</h2>
 
-      <div class="booking__steps">
-        <div class="step">
-          <p class="step__title">Choose Destination</p>
-          <p class="step__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-          </p>
-        </div>
-        <div class="step">
-          <p class="step__title">Make Payment</p>
-          <p class="step__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-          </p>
-        </div>
-        <div class="step">
-          <p class="step__title">Reach Airport on Selected Date</p>
-          <p class="step__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-          </p>
-        </div>
+    <div class="booking__steps">
+      <div class="step">
+        <p class="step__title">Choose Destination</p>
+        <p class="step__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+        </p>
+      </div>
+      <div class="step">
+        <p class="step__title">Make Payment</p>
+        <p class="step__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+        </p>
+      </div>
+      <div class="step">
+        <p class="step__title">Reach Airport on Selected Date</p>
+        <p class="step__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+        </p>
       </div>
     </div>
+  </div>
 
-    <div class="booking__image">
-      <!-- ToDo: правая карточка с фото -->
+  <div class="card">
+    <svg
+      width="654"
+      height="667"
+      viewBox="0 0 654 667"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g opacity="0.4">
+        <g opacity="0.8" filter="url(#filter0_f_1_550)">
+          <ellipse
+            cx="177"
+            cy="183.5"
+            rx="177"
+            ry="183.5"
+            transform="matrix(1 0 0 -1 150 517)"
+            fill="#59B1E6"
+          />
+        </g>
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_1_550"
+          x="0"
+          y="0"
+          width="654"
+          height="667"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_1_550" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="card__container">
+      <img src="assets/images/book-trip.png" alt="Book a trip" />
+      <p>Trip To Greece</p>
+      <p>14-29 June</p>
+      <p>by Robbin joseph</p>
+
+      <div class="card__icon">
+        <div>
+          <svg
+            class="ellipce"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_1_199)">
+              <path
+                d="M13.6544 0.150827C13.2855 0.0428744 4.26244 -0.855475 1.09361 3.42567C-0.309832 5.32223 -0.330914 7.9221 1.02328 11.1525C0.679764 11.8655 0.379038 12.6166 0.133956 13.4091C0.0594447 13.6499 0.194222 13.9052 0.434764 13.9795C0.479608 13.9934 0.525026 14 0.56987 14C0.764338 14 0.944888 13.8744 1.00515 13.6787C3.42037 5.87028 11.2693 2.09267 13.6762 1.13835C13.9105 1.0454 14.2235 0.317405 13.6544 0.150827Z"
+                fill="#84829A"
+              />
+              <path
+                d="M2.47192 12.1296C3.77832 12.6777 5.08453 12.9586 6.29922 12.9586C7.39103 12.9586 8.40923 12.7341 9.28663 12.2789C11.0525 11.3629 12.1315 9.61069 12.4071 7.2112C12.6878 4.76578 13.0373 3.23404 13.3289 2.297C10.7336 3.49416 5.16878 6.59728 2.47192 12.1296Z"
+                fill="#84829A"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_199">
+                <rect width="14" height="14" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <svg
+          class="ellipce"
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_1_213)">
+            <path
+              d="M13.5009 3.56123e-08C13.4232 -2.92608e-05 13.3466 0.0180173 13.2771 0.0527336L9.48821 1.94771L5.20378 0.0432416C5.19678 0.0402533 5.18878 0.039726 5.18128 0.0367378C5.16201 0.0295308 5.14229 0.0235251 5.12228 0.0187497C5.10239 0.0133885 5.08217 0.00919911 5.06178 0.00624017C5.02118 0.00290038 4.98037 0.00290038 4.93979 0.00624017C4.9194 0.00919911 4.89919 0.0133885 4.8793 0.0187497C4.85929 0.0235251 4.83957 0.0295308 4.82029 0.0367378C4.81279 0.039726 4.80479 0.040224 4.79779 0.0432416L0.297862 2.04322C0.11722 2.12343 0.000825201 2.30255 0.000854498 2.50019V13.5C0.000942387 13.6692 0.0865172 13.8268 0.228341 13.919C0.370195 14.0114 0.549108 14.0257 0.703822 13.957L5.00076 12.047L9.29769 13.957C9.30519 13.96 9.31319 13.957 9.32069 13.9615C9.44174 14.0157 9.5807 14.0126 9.69917 13.953C9.70717 13.9496 9.71616 13.953 9.72416 13.9475L13.7241 11.9476C13.8936 11.8629 14.0007 11.6896 14.0006 11.5V0.500237C14.0008 0.224088 13.777 0.000117221 13.5009 3.56123e-08ZM4.50079 11.1751L1.00083 12.7305V2.8252L4.50079 1.26971V11.1751ZM9.00072 12.7305L5.50076 11.1751V1.26971L9.00072 2.82517V12.7305ZM13.0006 11.1911L10.0007 12.691V2.80918L13.0006 1.3092V11.1911Z"
+              fill="#84829A"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_1_213">
+              <rect width="14" height="14" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <svg
+          class="ellipce"
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.3433 1.24251L6.02577 7.58335C5.95335 7.54139 5.87719 7.50624 5.79827 7.47835L1.62744 6.06668C1.5013 6.03507 1.38935 5.96222 1.30935 5.8597C1.22936 5.75719 1.18591 5.63088 1.18591 5.50085C1.18591 5.37081 1.22936 5.24451 1.30935 5.14199C1.38935 5.03947 1.5013 4.96662 1.62744 4.93501L11.9758 1.25418C12.0434 1.23121 12.1143 1.21939 12.1858 1.21918C12.2392 1.21832 12.2924 1.2262 12.3433 1.24251Z"
+            fill="#84829A"
+          />
+          <path
+            d="M12.7459 2.02412L9.06503 12.3841C9.02444 12.5049 8.94545 12.609 8.84012 12.6806C8.73478 12.7522 8.6089 12.7874 8.4817 12.7808C8.35303 12.7867 8.22602 12.7498 8.1205 12.6759C8.01498 12.6021 7.93687 12.4954 7.89836 12.3725L6.51003 8.20162C6.48214 8.1227 6.44699 8.04654 6.40503 7.97412L12.7575 1.65662C12.7934 1.77717 12.7893 1.90608 12.7459 2.02412Z"
+            fill="#84829A"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </section>
@@ -198,15 +299,13 @@
   </div>
 </section>
 
-<section class="subscribe">
-  <div class="container">
-    <p class="subscribe__text">
-      Subscribe to get information, latest news and other interesting offers about Jadoo
-    </p>
+<section class="subscribe container">
+  <p class="subscribe__text">
+    Subscribe to get information, latest news and other interesting offers about Jadoo
+  </p>
 
-    <div class="subscribe__form">
-      <input type="email" placeholder="Your email" class="subscribe__input" />
-      <button class="btn btn--primary">Subscribe</button>
-    </div>
+  <div class="subscribe__form">
+    <input type="email" placeholder="Your email" class="subscribe__input" />
+    <button class="btn btn--primary">Subscribe</button>
   </div>
 </section>

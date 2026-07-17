@@ -248,10 +248,14 @@
 }
 
 .destination-card {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 19px;
+  position: relative;
+  width: 19.69rem;
+  height: 28.56rem;
   border-radius: 1.5rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow:
     0 2px 3px 0 rgba(0, 0, 0, 0),
     0 8px 7px 0 rgba(0, 0, 0, 0.01),
@@ -260,11 +264,11 @@
     0 65px 47px 0 rgba(0, 0, 0, 0.02),
     0 100px 80px 0 rgba(0, 0, 0, 0.02);
 
-  &__container {
+  &__trip {
+    grid-column: 1 / -1;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
   }
 
   &__text {
@@ -277,4 +281,65 @@
     font-weight: 500;
     font-size: 18px;
   }
+
+  &__desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 25px 42px 25px;
+    background: #ffffff;
+    border-radius: 0 0 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    gap: 19px;
+  }
+}
+
+.booking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  &__container {
+    box-shadow:
+      0 2px 3px 0 rgba(0, 0, 0, 0),
+      0 8px 7px 0 rgba(0, 0, 0, 0.01),
+      0 20px 13px 0 rgba(0, 0, 0, 0.01),
+      0 39px 25px 0 rgba(0, 0, 0, 0.01),
+      0 65px 47px 0 rgba(0, 0, 0, 0.02),
+      0 100px 80px 0 rgba(0, 0, 0, 0.02);
+    background: #fff;
+    border-radius: 1.63rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+}
+
+.ellipce {
+  border-radius: 100%;
+  background: #f5f5f5;
+  padding: 12px;
+}
+
+.background-rome {
+  background-image: url('../assets/images/rome.png');
+}
+
+.background-london {
+  background-image: url('../assets/images/london.png');
+}
+
+.background-europe {
+  background-image: url('../assets/images/europe.png');
 }
