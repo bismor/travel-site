@@ -1,0 +1,280 @@
+.header {
+  width: 100%;
+  padding-bottom: 18px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    margin: 0 88px 0 222px;
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 97px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    margin: 0 0 24px 0;
+    color: #df6951;
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 20px;
+    line-height: normal; /* Auto в Figma */
+    letter-spacing: 0; /* 0% */
+  }
+
+  &__title {
+    margin: 0 0 30px 0;
+    font-family: 'Volkhov', Georgia, serif;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -0.04em;
+    color: #181e4b;
+  }
+
+  &__description {
+    margin: 0 0 34px 0;
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #5e6282;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+  }
+}
+
+.btn-primary {
+  padding: 19px 26px 18px 27px;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-family:
+    'Poppins',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: normal;
+  box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
+  background: #f1a501;
+  &:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+  }
+}
+
+.btn-play {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px 12px 12px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+
+  &:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+  }
+}
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ff4d4d;
+  flex-shrink: 0;
+  border-radius: 100%;
+  fill: #df6951;
+  box-shadow: 0 15px 30px 0 rgba(223, 105, 81, 0.3);
+}
+
+.btn__text {
+  font-family:
+    'Poppins',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: normal;
+  color: #686d77;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 73px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 73px;
+  }
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__subtitle {
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #5e6282;
+    margin: 0 0 10px 0;
+  }
+
+  &__title {
+    font-family: 'Volkhov', Georgia, serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #14183e;
+    margin: 0 0 66px 0;
+  }
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 42px 45px 42px;
+
+  &:hover {
+    border-radius: 2.25rem;
+    box-shadow:
+      0 2px 3px 0 rgba(0, 0, 0, 0),
+      0 8px 7px 0 rgba(0, 0, 0, 0.01),
+      0 20px 13px 0 rgba(0, 0, 0, 0.01),
+      0 39px 25px 0 rgba(0, 0, 0, 0.01),
+      0 65px 47px 0 rgba(0, 0, 0, 0.02),
+      0 100px 80px 0 rgba(0, 0, 0, 0.02);
+  }
+
+  &__text {
+    margin: 0;
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #5e6282;
+  }
+
+  &__title {
+    margin: 0;
+    font-family:
+      'Open Sans',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #1e1d4c;
+  }
+}
+
+.destinations {
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+  margin-bottom: 186px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 19px;
+  border-radius: 1.5rem;
+  box-shadow:
+    0 2px 3px 0 rgba(0, 0, 0, 0),
+    0 8px 7px 0 rgba(0, 0, 0, 0.01),
+    0 20px 13px 0 rgba(0, 0, 0, 0.01),
+    0 39px 25px 0 rgba(0, 0, 0, 0.01),
+    0 65px 47px 0 rgba(0, 0, 0, 0.02),
+    0 100px 80px 0 rgba(0, 0, 0, 0.02);
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__text {
+    margin: 0;
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
