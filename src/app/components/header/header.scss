@@ -1,0 +1,39 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  // ToDo сделать миксин
+}
+
+.header {
+  width: 100%;
+  padding-bottom: 18px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    margin: 0 88px 0 222px;
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+}

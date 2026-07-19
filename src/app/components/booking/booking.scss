@@ -1,0 +1,162 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  // ToDo сделать миксин
+}
+
+.booking {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 118px;
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__content {
+    max-width: 511px;
+  }
+}
+
+.card {
+  position: relative;
+  &__container {
+    width: 23.13rem;
+    height: 25rem;
+    box-shadow:
+      0 2px 3px 0 rgba(0, 0, 0, 0),
+      0 8px 7px 0 rgba(0, 0, 0, 0.01),
+      0 20px 13px 0 rgba(0, 0, 0, 0.01),
+      0 39px 25px 0 rgba(0, 0, 0, 0.01),
+      0 65px 47px 0 rgba(0, 0, 0, 0.02),
+      0 100px 80px 0 rgba(0, 0, 0, 0.02);
+    background: #fff;
+    border-radius: 1.63rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    gap: 25px;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &__shadow {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  &__title {
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-size: 1.13rem;
+    color: #080809;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-size: 1rem;
+    color: #84829a;
+    font-weight: 500;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__details-left {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+}
+
+.step {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'icon title'
+    'icon text';
+  column-gap: 21px;
+  &__title {
+    grid-area: title;
+    margin: 0;
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 1rem;
+    color: #5e6282;
+  }
+  &__text {
+    grid-area: text;
+    margin: 0;
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-size: 1rem;
+    color: #5e6282;
+    font-weight: 400;
+  }
+
+  &__icon {
+    grid-area: icon;
+    padding: 13px;
+    border-radius: 0.81rem;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.cube-color {
+  background: #f0bb1f;
+}
+
+.swim-color {
+  background: #f15a2b;
+}
+
+.car-color {
+  background: #006380;
+}
+
+.m-0 {
+  margin: 0;
+}
