@@ -1,0 +1,66 @@
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  // ToDo сделать миксин
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  &__subtitle {
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+
+  &__comment {
+    border-radius: 0.63rem;
+    width: 31.5rem;
+    height: 15.31rem;
+    gap: 34px;
+    max-width: 504px;
+  }
+
+  &__text {
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 200%;
+    color: #5e6282;
+  }
+
+  &__author {
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 600;
+    font-size: 1.13rem;
+    color: #5e6282;
+  }
+
+  &__city {
+    font-family:
+      'Poppins',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 500;
+    font-size: 0.88rem;
+    color: #5e6282;
+  }
+}
