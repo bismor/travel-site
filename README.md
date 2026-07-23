@@ -98,10 +98,3 @@ src/
 
 **Косяченко Владислав**  
 GitHub: [bismor](https://github.com/bismor)
-
----
-
-## Лицензия
-
-MIT
-```
