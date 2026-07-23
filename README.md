@@ -1,59 +1,107 @@
-# TravelSite
+# Travel Site
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.19.
+Современный лендинг туристического сервиса на Angular.
 
-## Development server
+Проект создан в качестве портфолио. Основной фокус — чистая архитектура, соблюдение методологии БЭМ, переиспользуемые стили и компонентный подход.
 
-To start a local development server, run:
+Дизайн основан на [Figma-макете Travel Website Landing Page](https://www.figma.com/design/K48KZ8EJ4ddKt59BeeISEJ/Travel-Website-Landing-Page--Community-?node-id=108-84).
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Технологии
 
-## Code scaffolding
+- Angular 21 (Standalone Components)
+- TypeScript
+- SCSS + методология БЭМ
+- Кастомная дизайн-система (переменные и миксины)
+- Адаптивная вёрстка (в процессе)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## Реализованный функционал
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Полная вёрстка основных секций лендинга:
+  - Header
+  - Hero
+  - Services
+  - Top Destinations
+  - Booking (Easy & Fast)
+  - Testimonials
+  - Subscribe
+- Переиспользуемый компонент иконок
+- Централизованные стили через SCSS-переменные и миксины
+- Соблюдение методологии БЭМ
+- Семантичная разметка
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Запуск проекта
 
-To build the project run:
+### Требования
 
-```bash
-ng build
-```
+- Node.js 20+
+- npm 10+
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Установка
 
 ```bash
-ng e2e
+git clone https://github.com/bismor/travel-site.git
+cd travel-site
+npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Запуск в режиме разработки
 
-## Additional Resources
+```bash
+npm start
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Приложение будет доступно по адресу: [http://localhost:4200](http://localhost:4200)
+
+### Сборка production-версии
+
+```bash
+npm run build
+```
+
+---
+
+## Структура проекта
+
+```
+src/
+├── app/
+│   ├── components/          # Основные секции лендинга
+│   └── shared/              # Переиспользуемые компоненты (в развитии)
+├── styles/
+│   ├── _variables.scss      # Цвета, типографика, размеры
+│   └── _mixins.scss         # Миксины (container, typography, flex и др.)
+├── assets/
+│   ├── images/
+│   └── fonts/
+└── styles.scss
+```
+
+---
+
+## Планы по развитию
+
+- [ ] Полная адаптивность (mobile + tablet)
+- [ ] Вынос общих UI-компонентов в `shared`
+- [ ] Перевод контента на data-driven подход
+- [ ] Улучшение доступности (a11y)
+- [ ] Деплой демо-версии
+
+---
+
+## Автор
+
+**Косяченко Владислав**  
+GitHub: [bismor](https://github.com/bismor)
+
+---
+
+## Лицензия
+
+MIT
+```
