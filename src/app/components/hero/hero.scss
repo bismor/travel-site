@@ -35,46 +35,43 @@
   }
 }
 
-.btn-primary {
-  @include text-body($fs-h3, 500, $color-white);
-  padding: 19px 26px 18px 27px;
+.btn {
   border-radius: 30px;
   border: none;
-  box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
-  background: #f1a501;
-  &:hover {
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-    transform: translateY(-1px);
-  }
-}
-
-.btn-play {
-  @include flex-center;
-  gap: 12px;
-  padding: 12px 24px 12px 12px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 30px;
 
   &:hover {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
   }
-}
 
-.btn__text {
-  @include text-body($fs-h3, 500, #686d77);
-}
+  &--primary {
+    @include text-body($fs-h3, 500, $color-white);
+    padding: 19px 26px 18px 27px;
+    box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
+    background: $color-secondary;
+  }
 
-.btn__icon {
-  @include flex-center;
-  width: 40px;
-  height: 40px;
-  background-color: #ff4d4d;
-  flex-shrink: 0;
-  border-radius: 100%;
-  fill: #df6951;
-  box-shadow: 0 15px 30px 0 rgba(223, 105, 81, 0.3);
+  &--play {
+    @include flex-center;
+    gap: 12px;
+    padding: 12px 24px 12px 12px;
+    background-color: $color-white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__text {
+    @include text-body($fs-h3, 500, #686d77);
+  }
+
+  &__icon {
+    @include flex-center;
+    width: 40px;
+    height: 40px;
+    background-color: #ff4d4d;
+    flex-shrink: 0;
+    border-radius: 100%;
+    fill: $color-primary;
+    box-shadow: 0 15px 30px 0 rgba(223, 105, 81, 0.3);
+  }
 }
