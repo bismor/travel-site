@@ -1,16 +1,12 @@
-// @use '/src/app/app.scss' as mixin;
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  // ToDo сделать миксин
-}
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .hero {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 97px;
+  @include container(1200px);
 
   &__content {
     display: flex;
@@ -18,39 +14,18 @@
   }
 
   &__subtitle {
-    margin: 0 0 24px 0;
-    color: #df6951;
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 700; /* Bold */
-    font-size: 20px;
-    line-height: normal; /* Auto в Figma */
-    letter-spacing: 0; /* 0% */
+    margin-bottom: 24px;
+    @include text-body($fs-h3, 700, $color-primary);
   }
 
   &__title {
-    margin: 0 0 30px 0;
-    font-family: 'Volkhov', Georgia, serif;
-    font-weight: 700;
-    font-size: 84px;
-    line-height: 89px;
-    letter-spacing: -0.04em;
-    color: #181e4b;
+    margin-bottom: 30px;
+    @include hero-title;
   }
 
   &__description {
     margin: 0 0 34px 0;
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #5e6282;
+    @include text-body(1.25rem, 500);
   }
 
   &__actions {
@@ -61,18 +36,10 @@
 }
 
 .btn-primary {
+  @include text-body($fs-h3, 500, $color-white);
   padding: 19px 26px 18px 27px;
-  color: white;
   border-radius: 30px;
   border: none;
-  font-family:
-    'Poppins',
-    system-ui,
-    -apple-system,
-    sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: normal;
   box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
   background: #f1a501;
   &:hover {
@@ -82,8 +49,7 @@
 }
 
 .btn-play {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   gap: 12px;
   padding: 12px 24px 12px 12px;
   background-color: white;
@@ -99,21 +65,11 @@
 }
 
 .btn__text {
-  font-family:
-    'Poppins',
-    system-ui,
-    -apple-system,
-    sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: normal;
-  color: #686d77;
+  @include text-body($fs-h3, 500, #686d77);
 }
 
 .btn__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   width: 40px;
   height: 40px;
   background-color: #ff4d4d;

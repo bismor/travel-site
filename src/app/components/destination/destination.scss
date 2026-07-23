@@ -1,13 +1,29 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+.section-header {
+  @include flex-center;
+  flex-direction: column;
+
+  &__subtitle {
+    @include section-subtitle;
+  }
+
+  &__title {
+    @include heading($fs-h2, 700, $color-black);
+  }
+}
+
 .destinations {
+  @include container(1200px);
+  @include flex-center;
   &__flex {
     display: flex;
     flex-direction: row;
     gap: 35px;
   }
   margin-bottom: 186px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .destination-card {
@@ -35,14 +51,8 @@
   }
 
   &__text {
+    @include text-body(18px, 500, $color-black);
     margin: 0;
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 500;
-    font-size: 18px;
   }
 
   &__desc {
@@ -51,7 +61,7 @@
     left: 0;
     right: 0;
     padding: 25px 25px 42px 25px;
-    background: #ffffff;
+    background: $color-white;
     border-radius: 0 0 1.5rem 1.5rem;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -62,7 +72,7 @@
 
 .ellipce {
   border-radius: 100%;
-  background: #f5f5f5;
+  background: $color-white;
   padding: 12px;
 }
 

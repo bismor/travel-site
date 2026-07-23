@@ -1,19 +1,21 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
 .testimonials {
+  @include container(1200px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  // ToDo сделать миксин
 }
 
 .section-header {
   display: flex;
   flex-direction: column;
   &__subtitle {
+    @include section-subtitle;
+  }
+  &__title {
+    @include heading($fs-h2, 700, $color-black);
   }
 }
 
@@ -31,36 +33,14 @@
   }
 
   &__text {
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 200%;
-    color: #5e6282;
+    @include text-body($fs-body, 500, $color-text);
   }
 
   &__author {
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 600;
-    font-size: 1.13rem;
-    color: #5e6282;
+    @include text-body($fs-body, 600, $color-text);
   }
 
   &__city {
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 500;
-    font-size: 0.88rem;
-    color: #5e6282;
+    @include text-body(0.88rem, 500, $color-text);
   }
 }

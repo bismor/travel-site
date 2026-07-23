@@ -1,13 +1,10 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  // ToDo сделать миксин
-}
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .booking {
-  display: flex;
+  @include container(1200px);
+  @include flex-center;
   flex-direction: row;
-  align-items: center;
   gap: 118px;
   margin-bottom: 200px;
 
@@ -22,6 +19,15 @@
   }
 }
 
+.section-header__subtitle {
+  @include section-subtitle;
+}
+
+.section-header__title {
+  @include heading($fs-h2, 700, $color-black);
+  margin-bottom: 30px;
+}
+
 .card {
   position: relative;
   &__container {
@@ -34,7 +40,7 @@
       0 39px 25px 0 rgba(0, 0, 0, 0.01),
       0 65px 47px 0 rgba(0, 0, 0, 0.02),
       0 100px 80px 0 rgba(0, 0, 0, 0.02);
-    background: #fff;
+    background: $color-white;
     border-radius: 1.63rem;
     display: flex;
     flex-direction: column;
@@ -62,25 +68,13 @@
   }
 
   &__title {
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-size: 1.13rem;
-    color: #080809;
-    font-weight: 500;
+    @include text-body(1.13rem, 500, $color-black);
+    margin: 0;
   }
 
   &__text {
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-size: 1rem;
-    color: #84829a;
-    font-weight: 500;
+    @include text-body($fs-body, 500, $color-text-light);
+    margin: 0;
   }
 
   &__information {
@@ -90,17 +84,14 @@
   }
 
   &__details {
-    display: flex;
+    @include flex-between;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
 
   &__details-left {
-    display: flex;
+    @include flex-center;
     flex-direction: row;
     gap: 5px;
-    align-items: center;
   }
 }
 
@@ -115,26 +106,12 @@
   &__title {
     grid-area: title;
     margin: 0;
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 700; /* Bold */
-    font-size: 1rem;
-    color: #5e6282;
+    @include text-body($fs-body, 700, $color-text);
   }
   &__text {
     grid-area: text;
     margin: 0;
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-size: 1rem;
-    color: #5e6282;
-    font-weight: 400;
+    @include text-body($fs-body, 400, $color-text);
   }
 
   &__icon {
@@ -147,17 +124,13 @@
 }
 
 .cube-color {
-  background: #f0bb1f;
+  background: $color-secondary;
 }
 
 .swim-color {
-  background: #f15a2b;
+  background: $color-primary;
 }
 
 .car-color {
   background: #006380;
-}
-
-.m-0 {
-  margin: 0;
 }

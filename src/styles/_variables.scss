@@ -1,0 +1,24 @@
+// ===== Colors =====
+$color-primary: #df6951;
+$color-secondary: #f1a501;
+$color-title: #181e4b;
+$color-text: #5e6282;
+$color-text-light: #84829a;
+$color-white: #ffffff;
+$color-black: #080809;
+
+// ===== Typography =====
+$font-heading: 'Volkhov', Georgia, serif;
+$font-body:
+  'Poppins',
+  system-ui,
+  -apple-system,
+  sans-serif;
+$font-alt: 'Open Sans', system-ui, sans-serif;
+
+// Размеры (можно сразу в rem)
+$fs-hero: 5.25rem; // 84px
+$fs-h2: 3.125rem; // 50px
+$fs-h3: 1.25rem; // 20px
+$fs-body: 1rem; // 16px
+$fs-small: 0.875rem; // 14px

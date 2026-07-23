@@ -1,10 +1,8 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  // ToDo сделать миксин
-}
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .services {
+  @include container(1200px);
   display: flex;
   flex-direction: column;
   margin-bottom: 73px;
@@ -17,27 +15,16 @@
 }
 
 .section-header {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  @include flex-center;
 
   &__subtitle {
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color: #5e6282;
+    @include heading($fs-body, 500, $color-black);
     margin: 0 0 10px 0;
   }
 
   &__title {
-    font-family: 'Volkhov', Georgia, serif;
-    font-size: 50px;
-    font-weight: 700;
-    color: #14183e;
+    @include heading(50px, 700, $color-black);
     margin: 0 0 66px 0;
   }
 }
@@ -61,23 +48,12 @@
 
   &__text {
     margin: 0;
-    font-family:
-      'Poppins',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #5e6282;
+    @include text-body($fs-body, 500, $color-text);
   }
 
   &__title {
     margin: 0;
-    font-family:
-      'Open Sans',
-      system-ui,
-      -apple-system,
-      sans-serif;
+    font-family: $font-alt;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;

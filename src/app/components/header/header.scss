@@ -1,17 +1,12 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  // ToDo сделать миксин
-}
+@use 'mixins' as *;
 
 .header {
   width: 100%;
   padding-bottom: 18px;
 
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include container(1200px);
+    @include flex-between;
     gap: 40px;
   }
 
