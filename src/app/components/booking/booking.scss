@@ -28,7 +28,7 @@
   margin-bottom: 30px;
 }
 
-.card {
+.booking-card {
   position: relative;
   &__container {
     width: 23.13rem;
@@ -123,14 +123,14 @@
   }
 }
 
-.cube-color {
+.step__icon--cube {
   background: $color-secondary;
 }
 
-.swim-color {
+.step__icon--orange {
   background: $color-primary;
 }
 
-.car-color {
+.step__icon--blue {
   background: #006380;
 }

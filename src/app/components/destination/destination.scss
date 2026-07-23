@@ -70,20 +70,14 @@
   }
 }
 
-.ellipce {
-  border-radius: 100%;
-  background: $color-white;
-  padding: 12px;
-}
-
-.background-rome {
+.destination-card--rome {
   background-image: url('/src/assets/images/rome.png');
 }
 
-.background-london {
+.destination-card--london {
   background-image: url('/src/assets/images/london.png');
 }
 
-.background-europe {
+.destination-card--europe {
   background-image: url('/src/assets/images/europe.png');
 }
