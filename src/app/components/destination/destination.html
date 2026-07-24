@@ -5,35 +5,17 @@
   </div>
 
   <div class="destinations__flex">
-    <div class="destination-card destination-card--rome">
-      <div class="destination-card__desc">
-        <p class="destination-card__text">Rome, Italy</p>
-        <p class="destination-card__text">$5.42k</p>
-        <div class="destination-card__trip">
-          <app-icon name="navigation" />
-          <span class="destination-card__text">10 Days Trip</span>
+    @for (item of destination; track item.id) {
+      <div class="destination-card" [class]="'destination-card--' + item.imageModifier">
+        <div class="destination-card__desc">
+          <p class="destination-card__text">{{ item.title }}</p>
+          <p class="destination-card__text">{{ item.price }}</p>
+          <div class="destination-card__trip">
+            <app-icon name="navigation" />
+            <span class="destination-card__text">{{ item.days }} Days Trip</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="destination-card destination-card--london">
-      <div class="destination-card__desc">
-        <p class="destination-card__text">London, UK</p>
-        <p class="destination-card__text">$4.2k</p>
-        <div class="destination-card__trip">
-          <app-icon name="navigation" />
-          <span class="destination-card__text">12 Days Trip</span>
-        </div>
-      </div>
-    </div>
-    <div class="destination-card destination-card--europe">
-      <div class="destination-card__desc">
-        <p class="destination-card__text">Full Europe</p>
-        <p class="destination-card__text">$15k</p>
-        <div class="destination-card__trip">
-          <app-icon name="navigation" />
-          <span class="destination-card__text">28 Days Trip</span>
-        </div>
-      </div>
-    </div>
+    }
   </div>
 </section>

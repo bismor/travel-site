@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SERVICES } from './services.data';
 
 @Component({
   selector: 'app-services',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './services.html',
   styleUrl: './services.scss',
 })
-export class Services {}
+export class Services {
+  services = SERVICES;
+}

@@ -4,34 +4,27 @@
     <h2 class="section-header__title">Book your next trip in 3 easy steps</h2>
 
     <div class="booking__steps">
-      <div class="step">
-        <img class="step__icon step__icon--cube" src="../assets/images/cube.svg" />
-        <p class="step__title">Choose Destination</p>
-        <p class="step__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-        </p>
-      </div>
-      <div class="step">
-        <img class="step__icon step__icon--orange" src="../assets/images/swim.svg" />
-        <p class="step__title">Make Payment</p>
-        <p class="step__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-        </p>
-      </div>
-      <div class="step">
-        <img class="step__icon step__icon--blue" src="../assets/images/car.svg" />
-        <p class="step__title">Reach Airport on Selected Date</p>
-        <p class="step__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-        </p>
-      </div>
+      @for (item of booking; track item.id) {
+        <div class="step">
+          <img
+            class="step__icon"
+            [class]="'step__icon--' + item.color"
+            [src]="item.src"
+            [alt]="item.alt"
+          />
+          <p class="step__title">{{ item.title }}</p>
+          <p class="step__text">
+            {{ item.text }}
+          </p>
+        </div>
+      }
     </div>
   </div>
 
   <div class="booking-card">
     <img class="booking-card__shadow" src="../assets/images/Group 589.svg" />
     <div class="booking-card__container">
-      <img src="assets/images/book-trip.png" alt="Book a trip" />
+      <img src="../assets/images/book-trip.png" alt="Book a trip" />
       <div class="booking-card__desc">
         <p class="booking-card__title">Trip To Greece</p>
         <div class="booking-card__information">

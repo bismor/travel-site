@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Icon } from '../../shared/components/icon/icon';
+import { DESTINATIONS } from './destinations.data';
 
 @Component({
   selector: 'app-destination',
@@ -7,4 +8,6 @@ import { Icon } from '../../shared/components/icon/icon';
   templateUrl: './destination.html',
   styleUrl: './destination.scss',
 })
-export class Destination {}
+export class Destination {
+  destination = DESTINATIONS;
+}
