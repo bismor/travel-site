@@ -8,5 +8,5 @@ import { SERVICES } from './services.data';
   styleUrl: './services.scss',
 })
 export class Services {
-  services = SERVICES;
+  readonly services = SERVICES;
 }

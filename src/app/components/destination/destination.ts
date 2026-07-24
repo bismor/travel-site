@@ -9,5 +9,5 @@ import { DESTINATIONS } from './destinations.data';
   styleUrl: './destination.scss',
 })
 export class Destination {
-  destination = DESTINATIONS;
+  readonly destinations = DESTINATIONS;
 }

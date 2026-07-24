@@ -5,7 +5,7 @@
   </div>
 
   <div class="destinations__flex">
-    @for (item of destination; track item.id) {
+    @for (item of destinations; track item.id) {
       <div class="destination-card" [class]="'destination-card--' + item.imageModifier">
         <div class="destination-card__desc">
           <p class="destination-card__text">{{ item.title }}</p>
