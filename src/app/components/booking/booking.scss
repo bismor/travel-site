@@ -23,10 +23,10 @@
   position: relative;
   &__container {
     @include card-shadow;
-    width: 23.13rem;
-    height: 25rem;
+    width: 370px;
+    height: 400px;
     background: $color-white;
-    border-radius: 1.63rem;
+    border-radius: $radius-xl;
     display: flex;
     flex-direction: column;
     padding: $space-5 $space-6;
