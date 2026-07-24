@@ -5,23 +5,22 @@
   @include container(1200px);
   display: flex;
   flex-direction: column;
-  margin-bottom: 73px;
-
+  margin-bottom: 72px;
   &__container {
     display: flex;
     flex-direction: row;
-    gap: 73px;
+    gap: 72px;
   }
 }
 
 .service-card {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 0 42px 45px 42px;
+  gap: $space-4;
+  padding: 0 $space-10 $space-11;
 
   &:hover {
-    border-radius: 2.25rem;
+    border-radius: $radius-lg;
     @include card-shadow;
   }
 
@@ -35,7 +34,7 @@
     font-family: $font-alt;
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
+    font-size: $fs-h3;
     color: #1e1d4c;
   }
 }

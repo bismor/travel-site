@@ -2,24 +2,24 @@
 
 .header {
   width: 100%;
-  padding-bottom: 18px;
+  padding-bottom: $space-5;
 
   &__container {
     @include container(1200px);
     @include flex-between;
-    gap: 40px;
+    gap: $space-10;
   }
 
   &__actions {
     display: flex;
     flex-direction: row;
-    gap: 52px;
+    gap: $space-12;
   }
 
   &__nav {
     display: flex;
     flex-direction: row;
-    gap: 55px;
+    gap: $space-12;
     margin: 0 88px 0 222px;
   }
 
@@ -27,7 +27,7 @@
     background: transparent;
     border: none;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: normal;
     letter-spacing: 0;
   }

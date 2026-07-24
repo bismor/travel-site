@@ -5,17 +5,17 @@
   @include container(1200px);
   @include flex-center;
   flex-direction: row;
-  gap: 118px;
-  margin-bottom: 200px;
+  gap: $space-30;
+  margin-bottom: $space-48;
 
   &__steps {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: $space-12;
   }
 
   &__content {
-    max-width: 511px;
+    max-width: 512px;
   }
 }
 
@@ -29,14 +29,14 @@
     border-radius: 1.63rem;
     display: flex;
     flex-direction: column;
-    padding: 20px 25px;
-    gap: 25px;
+    padding: $space-5 $space-6;
+    gap: $space-6;
   }
 
   &__desc {
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: $space-3;
   }
 
   &__shadow {
@@ -49,7 +49,7 @@
   &__icon {
     display: flex;
     flex-direction: row;
-    gap: 18px;
+    gap: $space-5;
   }
 
   &__title {
@@ -65,7 +65,7 @@
   &__information {
     display: flex;
     flex-direction: row;
-    gap: 3px;
+    gap: 4px;
   }
 
   &__details {
@@ -87,7 +87,7 @@
   grid-template-areas:
     'icon title'
     'icon text';
-  column-gap: 21px;
+  column-gap: $space-5;
   &__title {
     grid-area: title;
     margin: 0;
@@ -101,10 +101,10 @@
 
   &__icon {
     grid-area: icon;
-    padding: 13px;
-    border-radius: 0.81rem;
-    width: 22px;
-    height: 22px;
+    padding: $space-3;
+    border-radius: 13px;
+    width: 24px;
+    height: 24px;
   }
 }
 
