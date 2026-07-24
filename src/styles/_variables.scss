@@ -6,6 +6,9 @@ $color-text: #5e6282;
 $color-text-light: #84829a;
 $color-white: #ffffff;
 $color-black: #080809;
+$color-play-icon: #ff4d4d;
+$color-btn-text: #686d77;
+$color-step-car: #006380;
 
 // ===== Typography =====
 $font-heading: 'Volkhov', Georgia, serif;
@@ -16,9 +19,12 @@ $font-body:
   sans-serif;
 $font-alt: 'Open Sans', system-ui, sans-serif;
 
-// Размеры (можно сразу в rem)
+// Размеры
 $fs-hero: 5.25rem; // 84px
 $fs-h2: 3.125rem; // 50px
 $fs-h3: 1.25rem; // 20px
 $fs-body: 1rem; // 16px
 $fs-small: 0.875rem; // 14px
+
+// Радиусы
+$radius-lg: 1.5rem;

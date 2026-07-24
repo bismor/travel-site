@@ -61,14 +61,14 @@
   }
 
   &__text {
-    @include text-body($fs-h3, 500, #686d77);
+    @include text-body($fs-h3, 500, $color-btn-text);
   }
 
   &__icon {
     @include flex-center;
     width: 40px;
     height: 40px;
-    background-color: #ff4d4d;
+    background-color: $color-play-icon;
     flex-shrink: 0;
     border-radius: 100%;
     fill: $color-primary;
