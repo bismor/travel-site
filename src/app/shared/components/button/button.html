@@ -1,0 +1,12 @@
+<button class="btn" [class]="'btn--' + variant" [type]="type">
+  @if (variant === 'play') {
+    <span class="btn__icon">
+      <app-icon name="play" />
+    </span>
+    <span class="btn__text">
+      <ng-content />
+    </span>
+  } @else {
+    <ng-content />
+  }
+</button>

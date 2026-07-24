@@ -1,0 +1,42 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+.btn {
+  border-radius: $radius-button;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+  }
+
+  &--primary {
+    @include text-body($fs-h3, 500, $color-white);
+    padding: 18px 26px;
+    box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
+    background: $color-secondary;
+  }
+
+  &--play {
+    @include flex-center;
+    gap: $space-3;
+    padding: $space-3 $space-6 $space-3 $space-3;
+    background-color: $color-white;
+  }
+
+  &__text {
+    @include text-body($fs-h3, 500, $color-btn-text);
+  }
+
+  &__icon {
+    @include flex-center;
+    width: $space-10;
+    height: $space-10;
+    background-color: $color-play-icon;
+    flex-shrink: 0;
+    border-radius: $radius-full;
+    box-shadow: 0 15px 30px 0 rgba(223, 105, 81, 0.3);
+  }
+}
