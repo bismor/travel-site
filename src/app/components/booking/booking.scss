@@ -19,15 +19,6 @@
   }
 }
 
-.section-header__subtitle {
-  @include section-subtitle;
-}
-
-.section-header__title {
-  @include heading($fs-h2, 700, $color-black);
-  margin-bottom: 30px;
-}
-
 .booking-card {
   position: relative;
   &__container {

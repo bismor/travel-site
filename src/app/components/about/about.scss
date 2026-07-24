@@ -8,17 +8,6 @@
   justify-content: space-between;
 }
 
-.section-header {
-  display: flex;
-  flex-direction: column;
-  &__subtitle {
-    @include section-subtitle;
-  }
-  &__title {
-    @include heading($fs-h2, 700, $color-black);
-  }
-}
-
 .testimonial {
   display: flex;
   flex-direction: column;

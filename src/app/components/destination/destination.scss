@@ -1,19 +1,6 @@
 @use 'mixins' as *;
 @use 'variables' as *;
 
-.section-header {
-  @include flex-center;
-  flex-direction: column;
-
-  &__subtitle {
-    @include section-subtitle;
-  }
-
-  &__title {
-    @include heading($fs-h2, 700, $color-title);
-  }
-}
-
 .destinations {
   @include container(1200px);
   @include flex-center;
