@@ -37,13 +37,7 @@
 
   &:hover {
     border-radius: 2.25rem;
-    box-shadow:
-      0 2px 3px 0 rgba(0, 0, 0, 0),
-      0 8px 7px 0 rgba(0, 0, 0, 0.01),
-      0 20px 13px 0 rgba(0, 0, 0, 0.01),
-      0 39px 25px 0 rgba(0, 0, 0, 0.01),
-      0 65px 47px 0 rgba(0, 0, 0, 0.02),
-      0 100px 80px 0 rgba(0, 0, 0, 0.02);
+    @include card-shadow;
   }
 
   &__text {
