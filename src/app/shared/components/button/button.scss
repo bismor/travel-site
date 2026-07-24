@@ -28,6 +28,10 @@
 
   &__text {
     @include text-body($fs-h3, 500, $color-btn-text);
+
+    &--primary {
+      color: $color-white;
+    }
   }
 
   &__icon {
