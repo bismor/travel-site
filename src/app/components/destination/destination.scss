@@ -10,7 +10,7 @@
   }
 
   &__title {
-    @include heading($fs-h2, 700, $color-black);
+    @include heading($fs-h2, 700, $color-title);
   }
 }
 

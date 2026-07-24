@@ -1,0 +1,28 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  &--left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  &:not(.section-header--left) {
+    @include flex-center;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include section-subtitle;
+    margin: 0 0 10px 0;
+  }
+
+  &__title {
+    @include heading($fs-h2, 700, $color-title);
+    margin: 0;
+  }
+}
