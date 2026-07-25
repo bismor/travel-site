@@ -6,17 +6,25 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  &__header {
+    max-width: 400px;
+  }
 }
 
 .testimonial {
+  --photo-size: 68px;
+  padding-left: var(--photo-size) / 2;
   display: flex;
   flex-direction: column;
   max-width: 540px;
 
   &__comment {
+    padding: 28px 34px 34px 34px;
+    position: relative;
+    @include card-shadow;
     border-radius: 0.63rem;
     width: 31.5rem;
-    height: 15.31rem;
     gap: $space-8;
     max-width: 504px;
   }
@@ -31,5 +39,11 @@
 
   &__city {
     @include text-body(0.88rem, 500, $color-text);
+  }
+
+  &__avatar {
+    position: absolute;
+    top: calc(var(--photo-size) / 2 * -1);
+    left: calc(var(--photo-size) / 2 * -1);
   }
 }
