@@ -2,7 +2,7 @@
 
 Современный лендинг туристического сервиса на Angular.
 
-Проект создан в качестве портфолио. Основной фокус — чистая архитектура, соблюдение методологии БЭМ, переиспользуемые стили и компонентный подход.
+Проект создан в качестве портфолио. Основной фокус — чистая архитектура, методология БЭМ, переиспользуемые компоненты, дизайн-система и адаптивная вёрстка.
 
 Дизайн основан на [Figma-макете Travel Website Landing Page](https://www.figma.com/design/K48KZ8EJ4ddKt59BeeISEJ/Travel-Website-Landing-Page--Community-?node-id=108-84).
 
@@ -10,28 +10,36 @@
 
 ## Технологии
 
-- Angular 21 (Standalone Components)
-- TypeScript
-- SCSS + методология БЭМ
-- Кастомная дизайн-система (переменные и миксины)
-- Адаптивная вёрстка (в процессе)
+- **Angular 21** (Standalone Components)
+- **TypeScript**
+- **SCSS** + методология **БЭМ**
+- Кастомная дизайн-система (переменные, миксины, spacing, radius)
+- Адаптивная вёрстка (desktop / tablet / mobile)
+- Семантичная разметка и базовая доступность
 
 ---
 
-## Реализованный функционал
+## Что реализовано
 
-- Полная вёрстка основных секций лендинга:
-  - Header
-  - Hero
-  - Services
-  - Top Destinations
-  - Booking (Easy & Fast)
-  - Testimonials
-  - Subscribe
-- Переиспользуемый компонент иконок
+### Секции лендинга
+
+- Header с якорной навигацией и бургер-меню
+- Hero
+- Services
+- Top Destinations
+- Booking (Easy & Fast)
+- Testimonials
+- Subscribe
+
+### Архитектура и качество кода
+
+- Shared-компоненты: `Button`, `Icon`, `SectionHeader`
+- Data-driven подход (`*.data.ts` + `@for`)
+- Модели вынесены в `shared/models`
 - Централизованные стили через SCSS-переменные и миксины
 - Соблюдение методологии БЭМ
-- Семантичная разметка
+- Адаптив для всех основных секций
+- Мобильное меню с блокировкой скролла
 
 ---
 
@@ -71,11 +79,23 @@ npm run build
 ```
 src/
 ├── app/
-│   ├── components/          # Основные секции лендинга
-│   └── shared/              # Переиспользуемые компоненты (в развитии)
+│   ├── components/              # Секции лендинга
+│   │   ├── header/
+│   │   ├── hero/
+│   │   ├── services/
+│   │   ├── destination/
+│   │   ├── booking/
+│   │   ├── about/
+│   │   └── subscribe/
+│   └── shared/
+│       ├── components/
+│       │   ├── button/
+│       │   ├── icon/
+│       │   └── section-header/
+│       └── models/
 ├── styles/
-│   ├── _variables.scss      # Цвета, типографика, размеры
-│   └── _mixins.scss         # Миксины (container, typography, flex и др.)
+│   ├── _variables.scss          # Цвета, типографика, spacing, radius
+│   └── _mixins.scss             # container, typography, shadows, flex
 ├── assets/
 │   ├── images/
 │   └── fonts/
@@ -84,12 +104,11 @@ src/
 
 ---
 
-## Планы по развитию
+## Возможности для развития
 
-- [ ] Полная адаптивность (mobile + tablet)
-- [ ] Вынос общих UI-компонентов в `shared`
-- [ ] Перевод контента на data-driven подход
-- [ ] Улучшение доступности (a11y)
+- [ ] Улучшение доступности (focus-visible, aria)
+- [ ] Доработка бургер-меню и микроанимаций
+- [ ] Оптимизация изображений
 - [ ] Деплой демо-версии
 
 ---
@@ -98,3 +117,5 @@ src/
 
 **Косяченко Владислав**  
 GitHub: [bismor](https://github.com/bismor)
+
+---
