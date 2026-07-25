@@ -46,14 +46,22 @@
   position: relative;
   &__container {
     @include card-shadow;
-    width: 370px;
-    height: 400px;
+    height: auto;
+    min-height: 400px;
     background: $color-white;
     border-radius: $radius-xl;
     display: flex;
     flex-direction: column;
     padding: $space-5 $space-6;
     gap: $space-6;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: $radius-md;
+    object-fit: cover;
   }
 
   &__desc {
@@ -105,8 +113,6 @@
   // ===== Mobile =====
   @media (max-width: 768px) {
     &__container {
-      width: 100%;
-      max-width: 370px;
       height: auto;
       min-height: 380px;
     }
