@@ -17,6 +17,29 @@
   &__content {
     max-width: 512px;
   }
+
+  // ===== Tablet =====
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: $space-16;
+    margin-bottom: $space-32;
+    text-align: center;
+
+    &__content {
+      max-width: 100%;
+    }
+
+    &__steps {
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  // ===== Mobile =====
+  @media (max-width: 768px) {
+    gap: $space-12;
+    margin-bottom: $space-20;
+  }
 }
 
 .booking-card {
@@ -77,6 +100,20 @@
     @include flex-center;
     flex-direction: row;
     gap: 5px;
+  }
+
+  // ===== Mobile =====
+  @media (max-width: 768px) {
+    &__container {
+      width: 100%;
+      max-width: 370px;
+      height: auto;
+      min-height: 380px;
+    }
+
+    &__shadow {
+      display: none;
+    }
   }
 }
 

@@ -1,6 +1,10 @@
 <header class="header">
   <div class="header__container">
-    <img src="assets/images/Logo.svg" alt="Logo" />
+    <a href="#hero" class="header__logo" (click)="closeMenu()">
+      <img src="assets/images/Logo.svg" alt="Travel Site" />
+    </a>
+
+    <!-- Десктопная навигация -->
     <nav class="header__nav">
       <a class="header__link" href="#destinations">Destinations</a>
       <a class="header__link" href="#services">Hotels</a>
@@ -11,6 +15,32 @@
       <a class="header__link" href="#subscribe">Login</a>
       <a class="header__link" href="#subscribe">Sign up</a>
       <button class="header__link" type="button">EN</button>
+    </nav>
+
+    <!-- Кнопка бургера -->
+    <button
+      class="header__burger"
+      type="button"
+      [class.header__burger--active]="isMenuOpen"
+      (click)="toggleMenu()"
+      [attr.aria-label]="isMenuOpen ? 'Close menu' : 'Open menu'"
+      [attr.aria-expanded]="isMenuOpen"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Мобильное меню -->
+  <div class="header__mobile" [class.header__mobile--open]="isMenuOpen">
+    <nav class="header__mobile-nav">
+      <a class="header__mobile-link" href="#destinations" (click)="closeMenu()">Destinations</a>
+      <a class="header__mobile-link" href="#services" (click)="closeMenu()">Hotels</a>
+      <a class="header__mobile-link" href="#booking" (click)="closeMenu()">Flights</a>
+      <a class="header__mobile-link" href="#booking" (click)="closeMenu()">Bookings</a>
+      <a class="header__mobile-link" href="#subscribe" (click)="closeMenu()">Login</a>
+      <a class="header__mobile-link" href="#subscribe" (click)="closeMenu()">Sign up</a>
     </nav>
   </div>
 </header>
