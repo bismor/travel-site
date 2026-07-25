@@ -12,6 +12,13 @@
     transform: translateY(-1px);
   }
 
+  &--submit {
+    @include text-body($fs-h3, 500, $color-white);
+    padding: 22px 50px;
+    box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
+    background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  }
+
   &--primary {
     @include text-body($fs-h3, 500, $color-white);
     padding: 18px 26px;

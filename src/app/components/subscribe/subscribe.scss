@@ -1,5 +1,36 @@
 @use 'mixins' as *;
+@use 'variables' as *;
 
 .subscribe {
   @include container(1200px);
+  border-radius: 120px 20px 20px 20px;
+  background: #dfd7f933;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    font-family: $font-body;
+    font-size: 2rem;
+    text-align: center;
+    color: $color-text;
+    max-width: 800px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  &__input {
+    width: 400px;
+    padding: $space-6 $space-8;
+    border-radius: $radius-md;
+    background: $color-white;
+    border: none;
+    font-weight: 400;
+    font-size: $fs-body;
+    color: $color-input-placeholder;
+  }
 }

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Icon } from '../icon/icon';
 
-export type ButtonVariant = 'primary' | 'play';
+export type ButtonVariant = 'primary' | 'play' | 'submit';
 
 @Component({
   selector: 'app-button',
