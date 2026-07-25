@@ -2,6 +2,8 @@
 
 Современный лендинг туристического сервиса на Angular.
 
+**Демо:** [https://bismor.github.io/travel-site/](https://bismor.github.io/travel-site/)
+
 Проект создан в качестве портфолио. Основной фокус — чистая архитектура, методология БЭМ, переиспользуемые компоненты, дизайн-система и адаптивная вёрстка.
 
 Дизайн основан на [Figma-макете Travel Website Landing Page](https://www.figma.com/design/K48KZ8EJ4ddKt59BeeISEJ/Travel-Website-Landing-Page--Community-?node-id=108-84).
@@ -109,7 +111,6 @@ src/
 - [ ] Улучшение доступности (focus-visible, aria)
 - [ ] Доработка бургер-меню и микроанимаций
 - [ ] Оптимизация изображений
-- [ ] Деплой демо-версии
 
 ---
 
@@ -117,5 +118,3 @@ src/
 
 **Косяченко Владислав**  
 GitHub: [bismor](https://github.com/bismor)
-
----
